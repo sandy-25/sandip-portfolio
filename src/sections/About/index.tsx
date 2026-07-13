@@ -14,25 +14,25 @@ const STATS = [
 
 const TIMELINE = [
   {
-    year: '2019',
+    year: '2021',
     title: 'Started .NET Journey',
     description: 'Joined Diyan Technologies as a .NET Developer, beginning my enterprise software career.',
     color: 'bg-violet-500',
   },
   {
-    year: '2020',
+    year: '2022',
     title: 'Real-Time Systems',
     description: 'Mastered SignalR and WebSockets, building the Wegodoo real-time task management platform.',
     color: 'bg-blue-500',
   },
   {
-    year: '2021',
+    year: '2023',
     title: 'Full Stack Growth',
     description: 'Expanded into React.js and Angular 9 frontend development, built Infovores trade analytics platform.',
     color: 'bg-emerald-500',
   },
   {
-    year: '2022',
+    year: '2025',
     title: 'Enterprise Scale',
     description: 'Joined Careernet, deployed at Cognizant building mission-critical SOX compliance systems.',
     color: 'bg-accent',
