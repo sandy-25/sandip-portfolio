@@ -29,10 +29,11 @@ jobs:
       
       - name: Build
         run: npm run build
-      
-      - name: Deploy to Pages
-        uses: peaceiris/actions-gh-pages@v3
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v1
         with:
-          # Use a PAT stored in secrets so the action can push as a user
-          github_token: ${{ secrets.GH_PAGES_DEPLOY_TOKEN }}
-          publish_dir: ./dist
+          path: ./dist
