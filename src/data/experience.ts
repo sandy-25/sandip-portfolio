@@ -6,7 +6,7 @@ export const EXPERIENCE: ExperienceItem[] = [
     company: 'Careernet',
     role: 'Software Developer',
     type: 'Full-time',
-    startDate: '2022',
+    startDate: '2025',
     endDate: 'Present',
     location: 'Ahmedabad, India',
     description:
@@ -34,8 +34,8 @@ export const EXPERIENCE: ExperienceItem[] = [
     company: 'Diyan Technologies Pvt. Ltd.',
     role: '.NET Developer',
     type: 'Full-time',
-    startDate: '2019',
-    endDate: '2022',
+    startDate: '2025',
+    endDate: '2021',
     location: 'Ahmedabad, India',
     description:
       'Worked as a .NET Developer building diverse web applications across multiple domains. Gained deep expertise in REST API development, real-time systems with SignalR/WebSockets, and performance optimization.',

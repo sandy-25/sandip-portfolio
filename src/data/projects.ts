@@ -41,6 +41,8 @@ export const PROJECTS: Project[] = [
     ],
     gradient: 'linear-gradient(135deg, rgba(239,68,68,0.15) 0%, rgba(220,38,38,0.05) 100%)',
     accentColor: '#EF4444',
+    liveUrl: 'http://technosardar.com/',
+    imageUrl: './assets/firefighter-management.png',
   },
   {
     id: 'wegodoo',
@@ -82,6 +84,8 @@ export const PROJECTS: Project[] = [
     ],
     gradient: 'linear-gradient(135deg, rgba(59,130,246,0.15) 0%, rgba(37,99,235,0.05) 100%)',
     accentColor: '#3B82F6',
+    liveUrl: 'https://www.wegodoo.com/',
+    imageUrl: './assets/wegodoo.png',
   },
   {
     id: 'sox-assurance',
@@ -164,5 +168,95 @@ export const PROJECTS: Project[] = [
     ],
     gradient: 'linear-gradient(135deg, rgba(124,58,237,0.15) 0%, rgba(109,40,217,0.05) 100%)',
     accentColor: '#7C3AED',
+    liveUrl: 'https://www.infovores.in/',
+    imageUrl: './assets/Infoverse.png',
+  },
+  {
+    id: 'shoonya-trading',
+    title: 'Shoonya Trading',
+    subtitle: 'Modern Trading Platform',
+    description:
+      'A responsive trading platform that provides comprehensive trading, order management, charts, watchlists, and portfolio management in a single workspace.',
+    longDescription:
+      'Shoonya Trading is a modern web-based trading platform built with Next.js and TypeScript. The application offers an intuitive user experience with seamless access to trading, order management, interactive charts, watchlists, and portfolio tools. The frontend integrates with Sanity.io CMS for dynamic content management and consumes Node.js APIs for real-time data and application functionality.',
+    role: 'Front-End Developer',
+    status: 'completed',
+    featured: true,
+    techStack: {
+      frontend: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Material UI', 'Framer Motion'],
+      backend: ['Node.js APIs', 'Sanity.io CMS'],
+      database: [],
+      tools: ['Axios'],
+    },
+    responsibilities: [
+      'Developed responsive user interfaces using Next.js and Tailwind CSS.',
+      'Integrated dynamic content from Sanity.io CMS.',
+      'Consumed Node.js REST APIs using Axios.',
+      'Built reusable and maintainable UI components.',
+      'Implemented responsive layouts for desktop, tablet, and mobile devices.',
+      'Used Material UI components alongside custom Tailwind styling.',
+      'Added smooth animations and transitions using Framer Motion.',
+      'Collaborated with backend developers to integrate APIs and ensure seamless functionality.',
+    ],
+    keyAchievements: [
+      'Delivered a fully responsive trading platform.',
+      'Improved user experience with modern animations and intuitive UI.',
+      'Successfully integrated CMS-driven content for easier content management.',
+      'Created reusable components to improve development efficiency.',
+    ],
+    architecture:
+      'Component-based architecture using Next.js with TypeScript, Tailwind CSS for styling, Material UI for UI components, Axios for API communication, and Sanity.io as a headless CMS for dynamic content management.',
+    metrics: [
+      { label: 'Responsive Design', value: '100%' },
+      { label: 'CMS Integration', value: 'Sanity.io' },
+      { label: 'API Integration', value: 'REST APIs' },
+    ],
+    gradient: 'linear-gradient(135deg, rgba(79,70,229,0.15) 0%, rgba(59,130,246,0.05) 100%)',
+    accentColor: '#3B82F6',
+  },
+  {
+    id: 'avenue-six',
+    title: 'AvenueSix',
+    subtitle: 'Travel Agent Booking Portal',
+    description:
+      'AvenueSix is a travel agent portal that enables agencies to book accommodations, hotels, experiences, and events across London, Scotland, Switzerland, Paris, and other destinations in France and England.',
+    longDescription:
+      'AvenueSix is a travel agent portal designed to streamline travel bookings for agencies. The platform supports availability search, quotation creation, invoice generation, and client sharing across multiple destinations. The application uses ASP.NET MVC 4 with SQL Server and AJAX-driven interactions for a responsive booking workflow.',
+    role: 'Full-Stack / Front-End Developer',
+    status: 'completed',
+    featured: true,
+    techStack: {
+      backend: ['ASP.NET MVC 4', 'C#', 'SQL Server'],
+      frontend: ['JavaScript', 'jQuery', 'AJAX', 'HTML', 'CSS'],
+      database: ['SQL Server'],
+      tools: ['Visual Studio', 'Git'],
+    },
+    responsibilities: [
+      'Developed and maintained features using ASP.NET MVC 4.',
+      'Integrated backend APIs to fetch real-time hotel, accommodation, experience, and event availability.',
+      'Implemented advanced search and filtering based on destination, travel dates, occupancy, and budget.',
+      'Built dynamic booking workflows using AJAX and jQuery to improve user experience.',
+      'Developed invoice generation functionality, allowing travel agents to create and send professional invoices to clients.',
+      'Worked with SQL Server for data management and optimized database queries where required.',
+      'Collaborated with backend developers to integrate APIs and ensure accurate booking data.',
+      'Fixed bugs, enhanced existing features, and improved application performance.',
+    ],
+    keyAchievements: [
+      'Delivered an end-to-end travel booking portal for agent workflow management.',
+      'Implemented real-time availability search and booking functionality.',
+      'Built a seamless quotation and invoice workflow for client delivery.',
+      'Optimized booking performance with AJAX-driven UI updates.',
+    ],
+    architecture:
+      'ASP.NET MVC 4 application with SQL Server backend, AJAX-powered frontend, and modular booking workflow components for travel agents.',
+    metrics: [
+      { label: 'Destinations', value: '6+' },
+      { label: 'Workflow Speed', value: 'Real-Time' },
+      { label: 'Integration', value: 'API-driven' },
+    ],
+    gradient: 'linear-gradient(135deg, rgba(59,130,246,0.15) 0%, rgba(37,99,235,0.05) 100%)',
+    accentColor: '#2563EB',
+    liveUrl : 'https://www.avenue6.travel/',
+    imageUrl : './assets/avenue-six.png',
   },
 ];

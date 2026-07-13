@@ -19,7 +19,7 @@ export function ProjectsSection() {
           description="A selection of production-grade enterprise applications demonstrating full-stack expertise, scalable architecture, and real-world impact."
         />
 
-        <div className="grid lg:grid-cols-2 gap-6">
+        <div className="grid lg:grid-cols-2 gap-6 items-stretch">
           {PROJECTS.map((project, index) => (
             <ProjectCard key={project.id} project={project} index={index} />
           ))}

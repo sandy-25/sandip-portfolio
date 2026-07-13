@@ -28,6 +28,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
 
   return (
     <motion.div
+      className="h-full"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.1 }}
@@ -35,7 +36,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
     >
       <GlassCard
         hover={false}
-        className="overflow-hidden group"
+        className="overflow-hidden group h-full flex flex-col"
         style={{ background: project.gradient }}
       >
         {/* Card Header — always visible */}

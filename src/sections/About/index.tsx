@@ -8,7 +8,7 @@ import { fadeInUp, fadeInLeft, fadeInRight } from '@/utils/animations';
 const STATS = [
   { icon: FiCalendar, value: '5+', label: 'Years Experience', color: 'text-blue-400' },
   { icon: FiBriefcase, value: '2', label: 'Companies', color: 'text-violet-400' },
-  { icon: FiAward, value: '10+', label: 'Projects', color: 'text-emerald-400' },
+  { icon: FiAward, value: '6+', label: 'Projects', color: 'text-emerald-400' },
   { icon: FiMapPin, value: 'IND', label: 'Ahmedabad, India', color: 'text-amber-400' },
 ];
 
