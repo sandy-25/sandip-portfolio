@@ -119,7 +119,7 @@ export function HeroContent() {
           variant="secondary"
           size="lg"
           leftIcon={<FiDownload />}
-          href="/resume.pdf"
+          href="/SandipFSDCV.pdf"
           external
         >
           Download Resume

@@ -7,6 +7,7 @@ const HeroScene = lazy(() =>
   import('./HeroScene').then((mod) => ({ default: mod.HeroScene }))
 );
 
+
 /**
  * Hero section — the first impression.
  * 3D scene is lazy loaded to keep initial bundle lean.

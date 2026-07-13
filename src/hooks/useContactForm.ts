@@ -57,24 +57,36 @@ export function useContactForm(): UseContactFormReturn {
       return;
     }
 
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+    if (!serviceId || !templateId || !publicKey) {
+      setStatus('error');
+      setErrorMessage(
+        'EmailJS is not configured. Please add your VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_TEMPLATE_ID, and VITE_EMAILJS_PUBLIC_KEY to .env.local.'
+      );
+      return;
+    }
+
     setStatus('loading');
 
     try {
-      // Replace with your actual EmailJS credentials
       await emailjs.send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID ?? '',
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID ?? '',
+        serviceId,
+        templateId,
         {
           from_name: formData.name,
           from_email: formData.email,
           subject: formData.subject,
           message: formData.message,
         },
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY ?? ''
+        publicKey
       );
       setStatus('success');
       setFormData(INITIAL_FORM_DATA);
-    } catch {
+    } catch (error) {
+      console.error('EmailJS send failed:', error);
       setStatus('error');
       setErrorMessage('Failed to send message. Please try again or email me directly.');
     }
