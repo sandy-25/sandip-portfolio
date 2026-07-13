@@ -8,18 +8,20 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       pages: write
       id-token: write
 
     steps:
       - uses: actions/checkout@v4
-      
+        with:
+          persist-credentials: true
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          # Use Node 20+ because some dependencies (rolldown) require newer Node APIs
-          node-version: '20'
+          # Use Node 24 (runner default) to satisfy modern dependencies
+          node-version: '24'
           cache: 'npm'
       
       - name: Install dependencies
