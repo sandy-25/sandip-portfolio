@@ -92,7 +92,7 @@ export function HeroContent() {
       >
         {[
           { value: '5+', label: 'Years Experience' },
-          { value: '10+', label: 'Projects Delivered' },
+          { value: '6+', label: 'Projects Delivered' },
           { value: '2', label: 'Companies' },
         ].map((stat) => (
           <div key={stat.label} className="text-center">
